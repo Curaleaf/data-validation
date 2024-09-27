@@ -2,8 +2,5 @@ Metadata-Version: 2.1
 Name: data_validation
 Version: 1.0.0
 Summary: Utilities for data validation
-Author: Jairus Martinez
-Author-email: jairus.martinez@curaleaf.com
-Requires-Python: >=3.12
-Requires-Dist: pandas
-Requires-Dist: numpy
+Author-email: Jairus Martinez <jairus.martinez@curaleaf.com>
+Description-Content-Type: text/markdown

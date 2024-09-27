@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "data_validation"
+authors = [
+    {name = "Jairus Martinez", email = "jairus.martinez@curaleaf.com"},
+]
+description = """
+Utilities for data validation
+"""
+readme = "README.md"
+version = "1.0.0"
+
+[dependencies]
+pandas = "*"
+numpy = "*"
+setuptools = "*"
+
+[tool.setuptools]
+packages = ["src"]
