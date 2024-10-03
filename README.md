@@ -43,7 +43,7 @@ If you are working on existing models and want to compare your changes in the de
 
 ![image](https://github.com/user-attachments/assets/3a5cc401-1d96-476b-8236-d55124e7c49b)
 
-4. Average mean frequency ratio/frequency differences for each categorical column
+3. Average mean frequency ratio/frequency differences for each categorical column
 
 ![image](https://github.com/user-attachments/assets/13f0af24-3533-4077-8af2-48874b3aeb29)
 
