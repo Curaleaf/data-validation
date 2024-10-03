@@ -4,8 +4,41 @@ Purpose:
 - This Python package is utility that abstracts and streamlines getting the general data diffs between development and production tables
 - A lot of the adhod code to run comparisons between two tables is repetitive and time consuming and these functions provide an easy way to compare both categorical and numeric columns using just two functions
 
+### Installation in Hex
+#### 1. `pip install` straight from GitHub 
+```
+!pip install git+https://github.com/Curaleaf/data-validation.git
+
+from src.data_validation import compare_categorical_cols, compare_numeric_cols
+```
+
+#### 2. Install package within Hex
+![image](https://github.com/user-attachments/assets/603e8d10-28d2-4d14-bd73-c7e61b52a103)
+
+1. Import the package to the workspace via UI under the Environments tab (integration was already done between GitHub/Hex)
+2. Run `from src.data_validation import compare_categorical_cols, compare_numeric_cols`
+3. If the module cannot be found, explicitly add the Python path to the workspace
+
+ ```
+import sys, os
+sys.path.append(os.path.abspath('Curaleaf-data_validation/src/'))
+ ```
+4. Re-run command from step #3
+
+
 ### Functions
-1. compare_numeric_cols()
+1. compare_shapes*(
+```
+compare_shapes(df_1: pd.DataFrame, df_2: pd.DataFrame):
+    Prints the col and rows of both tables.
+    Args:
+        df_1 (dataframe) : first table to compare (must share the same exact col names)
+        df_2 (dataframe) : second table to compare (must share the same exact col names)
+    Returns:
+        None
+```
+
+2. compare_numeric_cols()
 ```
 compare_numeric_cols(df_1: pandas.core.frame.DataFrame, df_2: pandas.core.frame.DataFrame)
     Used to get the count/mean/min/max of two dataframes with the 
@@ -18,7 +51,7 @@ compare_numeric_cols(df_1: pandas.core.frame.DataFrame, df_2: pandas.core.frame.
     Returns:
         df : comparison table
 ```
-2. compare_categorical_cols()
+3. compare_categorical_cols()
 ```
 compare_categorical_cols(df_1: pandas.core.frame.DataFrame, df_2: pandas.core.frame.DataFrame)
     Performs categorical comparisons between two dataframes. Columns MUST be the exact same name.
@@ -68,12 +101,6 @@ Note:
     - Outputs:
         - Returns a dictionary object that contains column names as keys and values as dataframes containing the differnce metrics
 
-### Installation in Hex
-```
-!pip install git+https://github.com/Curaleaf/data-validation.git
-
-from src.data_validation import compare_categorical_cols, compare_numeric_cols
-``` 
 
 ### Example Usage
 [AdHoc Data Diff Hex Notebook](https://app.hex.tech/ee7be01c-5b3b-4920-aeb2-5e155dd24840/hex/e666faad-715d-42ee-8f3d-5de4442d4364/draft/logic)
