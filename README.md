@@ -40,7 +40,15 @@ compare_categorical_cols(df_1: pandas.core.frame.DataFrame, df_2: pandas.core.fr
 If you are working on existing models and want to compare your changes in the development environment to that in the production environment, you can get metrics about the
 1. Differences in shape for the two resulting tables
 2. Side-by-side descriptive statistics of the two tables
-3. Average mean frequency ratio/frequency differences for each categorical column
+
+![image](https://github.com/user-attachments/assets/3a5cc401-1d96-476b-8236-d55124e7c49b)
+
+4. Average mean frequency ratio/frequency differences for each categorical column
+
+![image](https://github.com/user-attachments/assets/13f0af24-3533-4077-8af2-48874b3aeb29)
+
+![image](https://github.com/user-attachments/assets/c1cde009-c417-42e6-9f3f-d759dd51e5b8)
+
 
 Note:
 - Both tables should have the same exact structure and should ideally have correct type casting.
