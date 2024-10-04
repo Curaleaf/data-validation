@@ -17,6 +17,3 @@ version = "1.0.0"
 pandas = "*"
 numpy = "*"
 setuptools = "*"
-
-[tool.setuptools]
-packages = ["data_validation"]
