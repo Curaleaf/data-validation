@@ -9,7 +9,7 @@
 ```
 !pip install git+https://github.com/Curaleaf/data-validation.git
 
-from src.data_validation import compare_categorical_cols, compare_numeric_cols, compare_shapes
+from data_validation import compare_categorical_cols, compare_numeric_cols, compare_shapes
 ```
 
 #### 2. Install package within Hex
@@ -17,7 +17,7 @@ from src.data_validation import compare_categorical_cols, compare_numeric_cols, 
 
 1. Import the package to the workspace via UI under the Environments tab (integration was already done between GitHub/Hex)
     - [Hex docs on Git Package Installation](https://learn.hex.tech/docs/explore-data/projects/environment-configuration/using-packages#git-packages) 
-3. Run `from src.data_validation import compare_categorical_cols, compare_numeric_cols, compare_shapes`
+3. Run `from data_validation import compare_categorical_cols, compare_numeric_cols, compare_shapes`
 4. If the module cannot be found, explicitly add the Python path to the workspace by running:
 
  ```
@@ -89,18 +89,18 @@ Note:
 
 ## What do the categorical comparison metrics mean?
 - Average Frequency Ratio
-  - Gets the __average frequency ratio__ of each unique categorical value in a column of one table and divdes it by the same value of the second table
+  - Gets the __average frequency ratio__ of each unique categorical value in a column of one table and divides it by the same value of the second table
     - This metric shows how aligned the values / value counts of each categorical column is between the two tables
         - Captures frequency/ordinance and presence of distinct values
     - __The closer the mean frequency ratio is to 1, the better__
   - Outputs:
-    - Prints our a dicttionary object with each column name and its corresponding avg_frequency_ratio
+    - Prints our a dictionary object with each column name and its corresponding avg_frequency_ratio
 - Frequency Difference
-    - Gets the frequency difference stats of the actual values between deveopment and production
+    - Gets the frequency difference stats of the actual values between development and production
         - This metric allows you to see in more detail how off or discrepant the two tables are
-        - counts, absolute differences, percent difference, percent of total
+        - Gives counts, absolute differences, percent difference, percents of total
     - Outputs:
-        - Returns a dictionary object that contains column names as keys and values as dataframes containing the differnce metrics
+        - Returns a dictionary object that contains column names as keys and values as dataframes which contain the differnce metrics
 
 
 ## Example Usage
