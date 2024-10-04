@@ -10,6 +10,7 @@ numpy = "*"
 [dev-packages]
 setuptools = "*"
 build = "*"
+pytest = "*"
 
 [requires]
 python_version = "3.12"
