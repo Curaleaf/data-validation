@@ -6,7 +6,7 @@ import numpy as np
 parentdir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 os.sys.path.insert(0,parentdir)
 
-from src.data_validation import compare_numeric_cols, compare_categorical_cols, compare_shapes 
+from data_validation import compare_numeric_cols, compare_categorical_cols, compare_shapes 
 
 class TestComparisonFunctions(unittest.TestCase):
 

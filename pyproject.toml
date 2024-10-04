@@ -19,4 +19,4 @@ numpy = "*"
 setuptools = "*"
 
 [tool.setuptools]
-packages = ["src"]
+packages = ["data_validation"]
