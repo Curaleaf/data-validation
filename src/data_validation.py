@@ -96,3 +96,16 @@ def compare_categorical_cols(df_1: pd.DataFrame, df_2: pd.DataFrame):
         frequency_differences[col] = frequency_diff
     
     return avg_frequency_ratio, frequency_differences
+
+def compare_shapes(df_1: pd.DataFrame, df_2: pd.DataFrame):
+    """
+    Prints the col and rows of both tables.
+    Args:
+        df_1 (dataframe) : first table to compare (must share the same exact col names)
+        df_2 (dataframe) : second table to compare (must share the same exact col names)
+    Returns:
+        None
+    """
+    print(f'PROD: {df_1.shape}')
+    print(f'DEV: {df_2.shape}')
+    return None
