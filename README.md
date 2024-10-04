@@ -9,7 +9,7 @@
 ```
 !pip install git+https://github.com/Curaleaf/data-validation.git
 
-from src.data_validation import compare_categorical_cols, compare_numeric_cols
+from src.data_validation import compare_categorical_cols, compare_numeric_cols, compare_shapes
 ```
 
 #### 2. Install package within Hex
@@ -17,7 +17,7 @@ from src.data_validation import compare_categorical_cols, compare_numeric_cols
 
 1. Import the package to the workspace via UI under the Environments tab (integration was already done between GitHub/Hex)
     - [Hex docs on Git Package Installation](https://learn.hex.tech/docs/explore-data/projects/environment-configuration/using-packages#git-packages) 
-3. Run `from src.data_validation import compare_categorical_cols, compare_numeric_cols`
+3. Run `from src.data_validation import compare_categorical_cols, compare_numeric_cols, compare_shapes`
 4. If the module cannot be found, explicitly add the Python path to the workspace by running:
 
  ```
