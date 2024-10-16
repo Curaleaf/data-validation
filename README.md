@@ -17,8 +17,12 @@ from data_validation import compare_categorical_cols, compare_numeric_cols, comp
 
 1. Import the package to the workspace via UI under the Environments tab (integration was already done between GitHub/Hex)
     - [Hex docs on Git Package Installation](https://learn.hex.tech/docs/explore-data/projects/environment-configuration/using-packages#git-packages) 
-3. Run `from data_validation import compare_categorical_cols, compare_numeric_cols, compare_shapes`
-4. If the module cannot be found, explicitly add the Python path to the workspace by running:
+3. Run
+
+   ```
+   from data_validation import compare_categorical_cols, compare_numeric_cols, compare_shapes
+   ```
+5. If the module cannot be found, explicitly add the Python path to the workspace by running:
 
  ```
 import sys, os
