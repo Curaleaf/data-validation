@@ -26,7 +26,7 @@ from data_validation import compare_categorical_cols, compare_numeric_cols, comp
 
  ```
 import sys, os
-sys.path.append(os.path.abspath('Curaleaf-data_validation/'))
+sys.path.append(os.path.abspath('Curaleaf-data-validation/'))
  ```
 4. Re-run command from step #3
 
